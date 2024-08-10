@@ -1,5 +1,14 @@
 Laravel 11, PHP 8.2
 
+Чтобы запустить проект надо:
+
+composer install
+cp .env.example .env
+php artisan key:generate 
+В файле .env меняем DB_CONNECTION=sqlite на mysql 
+php artisan migrate 
+php artisan db:seed
+
 Все данные для проверки включены в seeders (пользователи, промокоды и контакты). 
 Url для админки: {APP_URL}/admin. Пользователь в UserSeeder указаны верные данные для входа в админку.
 
